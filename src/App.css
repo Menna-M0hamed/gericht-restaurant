@@ -1,0 +1,202 @@
+.black_bg{
+  background-color: var(--color-black);
+}
+
+.relative{
+  position: relative;
+  z-index: 10;
+}
+
+.absolute{
+  position: absolute;
+  z-index: 0;
+}
+
+.row{
+  flex-direction: row;
+}
+
+.col{
+  flex-direction: column;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app_bg {
+  background: url('./assets/bg.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+input{
+  padding: 0.50rem 0.5rem;
+  background-color: transparent;
+  border: 1px solid var(--color-golden);
+  border-radius: 5px;
+}
+
+.custom__button {
+  background-color: var(--color-crimson);
+    color: var(--color-black);
+    font-family: var(--font-base);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    line-height: 28px;
+    font-size: 16px;
+    padding: 0.5rem 1.5rem;
+    border-radius: 1px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 30px 0px;
+    text-align: center;
+}
+
+.circle-button {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid var(--color-golden);
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+}
+
+.header .container{
+  margin-top: 60px;
+}
+
+.header-h1{
+  font-family: var(--font-base);
+    color: var(--color-golden);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    /* line-height: 150px; */
+    line-height: clamp(3rem, 5rem, 5rem);
+    /* font-size: 90px; */
+    font-size:clamp(3.5rem, 4rem, 4.5rem);
+}
+
+.title{
+  font-family: var(--font-base);
+  color: var(--color-white);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  font-feature-settings: 'tnum' on, 'lnum' on;
+  line-height: 29.9px;
+  font-size: clamp(15px, 18px, 23px);
+  margin-bottom: 0px;
+}
+
+.paragraph{
+  font-family: var(--font-alt);
+    color: var(--color-white);
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    line-height: 28px;
+    font-size: clamp(10px, 14px, 16px);
+    margin: 30px 0px;
+}
+
+.paragraph2 {
+font-family: var(--font-base);
+font-weight: 400;
+font-size: 32px;
+line-height: 41.6px;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+color: var(--color-golden);
+}
+
+.headtext {
+  font-family: var(--font-base);
+  color: var(--color-golden);
+  font-size: clamp(2.5rem, 10vw, 4rem);
+  line-height: 60px;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  margin-bottom: 0px;
+}
+
+.about-us p{
+  color: var(--color-grey);
+}
+
+.gold-border{
+  border: 2px solid var(--color-golden);
+}
+
+.menu-heading{
+  font-family: var(--font-base);
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 58.5px;
+    letter-spacing: 0.04em;
+    color: var(--color-white);
+}
+
+.about-us .g-img{
+  max-width: 90%;
+  max-height: 400px;
+}
+
+.spoon__img {
+  width: 45px;
+}
+
+.icons{
+  color: var(--color-white);
+    margin: 0.5rem;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.newsletter input {
+  width: 60%;
+}
+
+.newsletter button {
+  width: 30%;
+}
+
+.newsletter .subscribe{
+  width: 80%;
+}
+
+@media screen and (min-width: 2000px) {
+  .custom__button {
+    font-size: 37px;
+    line-height: 67px;
+  }
+
+  .spoon__img {
+    width: 80px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .gold-border{
+    border: none;
+  }
+
+  .newsletter input{
+    width:75% ;
+  }
+
+  .newsletter button {
+    width:37% ;
+  }
+
+  .newsletter .subscribe {
+    width: 100%;
+  }
+}

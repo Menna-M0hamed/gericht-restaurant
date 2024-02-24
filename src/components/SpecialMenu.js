@@ -16,7 +16,7 @@ const SpecialMenu = () => (
       <Row className="flex-center align-items-start">
         <Col lg="4" md="12" sm="10">
           <div>
-            <p className="menu-heading py-5 text-center">Wine & Beer</p>
+            <p className="menu-heading py-5 text-center">Coffee</p>
             {data.wines.map((wine, index) => {
               const { title, price, tags } = wine;
               return (
